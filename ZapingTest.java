@@ -43,4 +43,11 @@ public class ZapingTest {
         int clics = zapping.calcularClics(63, 5);
         assertEquals(41, clics);
     }
+
+    @org.junit.jupiter.api.Test
+    public void testCanalOrigen1CanalDestino51() {
+        Zapping zapping = new Zapping();
+        int clics = zapping.calcularClics(1, 51);
+        assertEquals(49, clics);
+    }
 }

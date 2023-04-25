@@ -2,10 +2,6 @@ public class Zapping {
     public Zapping() {
     }
     public int calcularClics (int canalOrigen, int canalDestino){
-        int clics = Math.abs(canalDestino - canalOrigen);
-        if (clics > 50){
-            clics = 99 - clics;
-        }
-        return clics;
+        return Math.min(Math.abs(canalDestino - canalOrigen), Math.min(canalOrigen, canalDestino) + 99 - Math.max(canalOrigen, canalDestino));
     }
 }
